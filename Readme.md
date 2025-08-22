@@ -133,20 +133,6 @@ Closes #24
 
 ---
 
-## Packaging for Production
-
-To create a `.zip` file ready for submission to the Chrome Web Store:
-
-1.  Ensure all your changes are committed and your working directory is clean.
-2.  From the root of the project directory, run the following command:
-
-    ```bash
-    zip -r extension.zip . -x "*.git*" "README.md" "Architecture.md" "*.DS_Store"
-    ```
-
-3.  The `extension.zip` file will be created in the root directory.
-
----
 
 ## License
 
