@@ -1,0 +1,32 @@
+{
+  "manifest_version": 3,
+  "name": "Real-Time Audio Transcription",
+  "version": "2.0",
+  "description": "Captures audio from browser tabs or microphone and provides real-time transcription in a sidepanel.",
+  "permissions": [
+    "tabCapture",
+    "activeTab",
+    "sidePanel",
+    "storage",
+    "offscreen"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "side_panel": {
+    "default_path": "sidepanel.html"
+  },
+  "action": {
+    "default_icon": {
+      "16": "images/icon16.png",
+      "48": "images/icon48.png",
+      "128": "images/icon128.png"
+    },
+    "default_title": "Open Transcription Panel"
+  },
+  "icons": {
+    "16": "images/icon16.png",
+    "48": "images/icon48.png",
+    "128": "images/icon128.png"
+  }
+}
